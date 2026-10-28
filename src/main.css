@@ -1,2 +1,21 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+
+@theme {
+	--font-sans: 'Inter', sans-serif;
+
+	--color-main: #31393c;
+	--color-line: #b4b4b4;
+	--color-primary: #ff5f00;
+	--color-primary-hover: #ff9e59;
+	--color-link: #078691;
+	--color-muted: #7e7e7e;
+	--color-checkbox-hover: #f4f4f4;
+}
+
+@layer base {
+	body {
+		font-family: var(--font-sans);
+		color: var(--color-text-primary);
+	}
+}
