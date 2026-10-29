@@ -16,6 +16,13 @@
 		"test": "vitest",
 		"coverage": "vitest run --coverage"
 	},
+	"packageManager": "pnpm@9.15.9",
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@swc/core",
+			"esbuild"
+		]
+	},
 	"dependencies": {
 		"@tanstack/react-query": "^5.74.3",
 		"date-fns": "^2.30.0",
