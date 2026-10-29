@@ -15,9 +15,9 @@ export const Checkbox = ({
 }: CheckboxProps) => (
 	<label
 		title={description}
-		className="flex min-h-6 cursor-pointer items-center gap-2 text-base font-normal"
+		className="inline-flex w-fit min-h-6 cursor-pointer items-center gap-2 text-base font-normal"
 	>
-		<span className="relative m-0.5 size-5 shrink-0">
+		<span className="relative m-0.5 size-5">
 			<input
 				type="checkbox"
 				className="peer size-5 cursor-pointer appearance-none rounded-[3px] border-2 border-main bg-white hover:bg-checkbox-hover checked:border-main checked:bg-main checked:hover:bg-main focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-muted transition-colors duration-300"

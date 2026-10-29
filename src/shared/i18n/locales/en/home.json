@@ -1,0 +1,6 @@
+{
+	"title": "WinWinTravel frontend test task",
+	"openFilter": "Filter",
+	"appliedFilterTitle": "Applied filter",
+	"appliedFilterHint": "Current value of the global filter state (SearchRequestFilter)"
+}

@@ -16,7 +16,7 @@ export const InfoTooltip = ({ label, text }: InfoTooltipProps) => {
 				type="button"
 				aria-label={label}
 				aria-describedby={tooltipId}
-				className="cursor-help rounded-full text-muted transition-colors hover:text-text-primary focus-visible:text-text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-muted"
+				className="cursor-help rounded-full text-muted transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-muted"
 			>
 				<InfoIcon className="size-4" />
 			</button>

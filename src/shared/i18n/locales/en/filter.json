@@ -1,1 +1,9 @@
-{}
+{
+	"title": "Filter",
+	"apply": "Apply",
+	"clearAll": "Clear all parameters",
+	"loading": "Loading filters…",
+	"loadError": "Could not load the filters.",
+	"retry": "Try again",
+	"infoLabel": "More information about {{name}}"
+}
