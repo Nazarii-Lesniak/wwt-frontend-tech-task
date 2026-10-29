@@ -11,11 +11,17 @@
 	--color-link: #078691;
 	--color-muted: #7e7e7e;
 	--color-checkbox-hover: #f4f4f4;
+
+	--shadow-modal: 0 0 24px rgb(0 0 0 / 0.12);
 }
 
 @layer base {
 	body {
 		font-family: var(--font-sans);
 		color: var(--color-text-primary);
+	}
+
+	html:has(dialog[open]) {
+		overflow: hidden;
 	}
 }

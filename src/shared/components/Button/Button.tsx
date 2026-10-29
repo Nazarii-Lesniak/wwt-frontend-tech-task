@@ -11,7 +11,7 @@ const BASE_CLASSES =
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
 	primary:
-		'h-16 min-w-46 rounded-2xl bg-primary px-6 font-semibold text-whitehover:bg-primary-hover active:bg-primary-hover',
+		'h-16 min-w-46 rounded-2xl bg-primary px-6 font-semibold text-white hover:bg-primary-hover active:bg-primary-hover',
 	link: 'font-normal text-link underline underline-offset-2 hover:text-muted active:text-main'
 }
 
