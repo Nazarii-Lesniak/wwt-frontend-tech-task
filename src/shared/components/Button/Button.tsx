@@ -1,6 +1,6 @@
 import { type ButtonHTMLAttributes } from 'react'
 
-type ButtonVariant = 'primary' | 'link'
+type ButtonVariant = 'primary' | 'link' | 'reset'
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 	variant?: ButtonVariant
@@ -12,7 +12,9 @@ const BASE_CLASSES =
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
 	primary:
 		'h-16 min-w-46 rounded-2xl bg-primary px-6 font-semibold text-white hover:bg-primary-hover active:bg-primary-hover',
-	link: 'font-normal text-link underline underline-offset-2 hover:text-muted active:text-main'
+	link: 'font-normal text-link underline underline-offset-2 hover:text-muted active:text-main',
+	reset:
+		'h-16 min-w-46 rounded-2xl px-6 font-semibold text-text-grey border-2 border-border-grey hover:border-primary-hover'
 }
 
 export const Button = ({

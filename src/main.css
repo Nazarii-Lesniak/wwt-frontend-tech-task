@@ -11,6 +11,8 @@
 	--color-link: #078691;
 	--color-muted: #7e7e7e;
 	--color-checkbox-hover: #f4f4f4;
+	--color-text-grey: #474747;
+	--color-border-grey: #b4b4b4;
 
 	--shadow-modal: 0 0 24px rgb(0 0 0 / 0.12);
 }

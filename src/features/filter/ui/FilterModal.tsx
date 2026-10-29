@@ -12,6 +12,7 @@ import {
 	toggleOption
 } from '@/shared/utils/filterSelection'
 
+import { ConfirmApplyModal } from './ConfirmApplyModal'
 import { FilterSection } from './FilterSection'
 
 interface FilterModalContentProps {
@@ -32,13 +33,14 @@ const FilterModalContent = ({ onClose }: FilterModalContentProps) => {
 
 	const [stagedFilter, setStagedFilter] =
 		useState<SearchRequestFilter>(appliedFilter)
+	const [isConfirmOpen, setIsConfirmOpen] = useState(false)
 
 	const handleToggle = (filterId: string, optionId: string) =>
 		setStagedFilter(current => toggleOption(current, filterId, optionId))
 
 	const handleClearAll = () => setStagedFilter([])
 
-	const handleApply = () => {
+	const handleApplyNew = () => {
 		applyFilter(normalizeSelection(stagedFilter, filterItems ?? []))
 		onClose()
 	}
@@ -79,7 +81,7 @@ const FilterModalContent = ({ onClose }: FilterModalContentProps) => {
 					center: (
 						<Button
 							disabled={!filterItems}
-							onClick={handleApply}
+							onClick={() => setIsConfirmOpen(true)}
 						>
 							{t('apply')}
 						</Button>
@@ -96,6 +98,13 @@ const FilterModalContent = ({ onClose }: FilterModalContentProps) => {
 			>
 				{content}
 			</Modal>
+			{isConfirmOpen && (
+				<ConfirmApplyModal
+					onUseOld={onClose}
+					onApplyNew={handleApplyNew}
+					onClose={() => setIsConfirmOpen(false)}
+				/>
+			)}
 		</>
 	)
 }

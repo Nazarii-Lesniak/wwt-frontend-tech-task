@@ -5,5 +5,10 @@
 	"loading": "Loading filters…",
 	"loadError": "Could not load the filters.",
 	"retry": "Try again",
-	"infoLabel": "More information about {{name}}"
+	"infoLabel": "More information about {{name}}",
+	"confirm": {
+		"title": "Do you want to apply new filter",
+		"useOld": "Use old filter",
+		"applyNew": "Apply new filter"
+	}
 }

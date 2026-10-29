@@ -11,7 +11,7 @@ export const InfoTooltip = ({ label, text }: InfoTooltipProps) => {
 	const tooltipId = useId()
 
 	return (
-		<span className="group relative inline-flex">
+		<span className="group relative inline-flex self-center">
 			<button
 				type="button"
 				aria-label={label}

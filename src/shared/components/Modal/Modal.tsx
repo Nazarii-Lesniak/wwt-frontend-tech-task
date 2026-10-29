@@ -70,7 +70,7 @@ export const Modal = ({ title, onClose, children, actions }: ModalProps) => {
 			onCancel={handleCancel}
 			onMouseDown={handleMouseDown}
 			onClick={handleClick}
-			className="fixed inset-0 m-0 h-full max-h-none w-full max-w-none overflow-y-auto bg-black/40 p-4 md:py-8 border-none backdrop:bg-transparent open:flex"
+			className="fixed inset-0 h-full max-h-none w-full max-w-none overflow-y-auto bg-black/40 p-4 md:py-8 backdrop-blur-sm open:flex"
 		>
 			<div
 				className="m-auto w-full max-w-[1280px] flex flex-col rounded-2xl bg-white p-0 text-main shadow-modal"
@@ -93,7 +93,7 @@ export const Modal = ({ title, onClose, children, actions }: ModalProps) => {
 					</button>
 				</header>
 
-				<hr className="mx-8 shrink-0 border-t-2 border-line" />
+				{children && <hr className="mx-8 shrink-0 border-t-2 border-line" />}
 
 				{children && <div className="px-8">{children}</div>}
 
